@@ -1,0 +1,18 @@
+[package]
+name = "rust_macro_import"
+version = "0.1.0"
+edition = "2021"
+publish = false
+lncense = "MIT"
+
+[dependencies]
+a = { path = "a" }
+
+[[bin]]
+name = "rust_macro_import"
+path = "main.rs"
+
+[workspace]
+
+members = [".", "a", "b", "b_macro"]
+resolver = "2"
